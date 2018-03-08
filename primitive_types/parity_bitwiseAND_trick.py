@@ -7,7 +7,7 @@ def parity(x):
     parity = 0
 
     while x:
-        parity ^= x & 1
+        parity ^= 1 
         x = x&(x-1)
     return parity
 

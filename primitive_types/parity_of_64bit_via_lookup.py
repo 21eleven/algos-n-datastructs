@@ -37,9 +37,6 @@ def main():
     print("lookup table : {}".format(stop-start))
 
 
-
-    return 1
-
 def naive_parity(x):
     parity = 0
     while x:

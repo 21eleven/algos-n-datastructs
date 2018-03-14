@@ -6,7 +6,7 @@ def switch_bits(x,i,j):
 	if (x >> i & 1) != (x >> j & 1):
 		x ^= 1 << i
 		x ^= 1 << j
-		return x
+	return x
 
 def main():
 	print("{} : flip bits at index 0 and 2 -> {}".format(bin(12),

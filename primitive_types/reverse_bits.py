@@ -28,7 +28,7 @@ def init_lookup16bit():
 def reverse_64bit_w_lookup(x,lookup):
 	return lookup[x & 0xFFFF] << 48 | lookup[x >> 16 & 0xFFFF] << 32 | lookup[x >> 32 & 0xFFFF] << 16 | lookup[x >> 48] 	
 
-def b(n,digits):
+def b(n,digits=8):
 	return format(n,'0{}b'.format(digits))
 
 
